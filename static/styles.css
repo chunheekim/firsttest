@@ -7,7 +7,12 @@
 }
 
 body {
-  background: linear-gradient(to bottom right, #fff4f4, #e0ffe0);
+  background: linear-gradient(to bottom right, #fff4f4, #e0ffe0),
+              url('https://cdn.pixabay.com/photo/2016/04/27/14/45/cherry-blossom-1355174_1280.png');
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: 250px;
+  background-attachment: fixed;
   color: #333;
   padding: 40px 20px;
   display: flex;
@@ -15,6 +20,7 @@ body {
   align-items: center;
   min-height: 100vh;
 }
+
 
 /* 메인 박스 */
 .container {
