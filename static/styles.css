@@ -1,13 +1,13 @@
-/* 기본 초기화 */
+/* 전체 초기화 */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Helvetica', 'Arial', sans-serif;
+  font-family: 'Noto Sans KR', 'Helvetica', sans-serif;
 }
 
 body {
-  background-color: #f5f7fa;
+  background: linear-gradient(to bottom right, #fff4f4, #e0ffe0);
   color: #333;
   padding: 40px 20px;
   display: flex;
@@ -16,14 +16,15 @@ body {
   min-height: 100vh;
 }
 
-/* 전체 박스 */
+/* 메인 박스 */
 .container {
   background-color: #ffffff;
-  padding: 30px 40px;
-  border-radius: 16px;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
-  max-width: 400px;
+  padding: 32px 40px;
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  max-width: 420px;
   width: 100%;
+  border: 2px solid #ffb6c1;
 }
 
 /* 제목 */
@@ -31,10 +32,10 @@ h1 {
   text-align: center;
   margin-bottom: 24px;
   font-size: 24px;
-  color: #1e2a38;
+  color: #d14d72;
 }
 
-/* 입력 폼 */
+/* 폼 */
 form {
   display: flex;
   flex-direction: column;
@@ -44,6 +45,7 @@ label {
   margin-top: 12px;
   margin-bottom: 6px;
   font-weight: bold;
+  color: #4d604d;
 }
 
 input[type="text"] {
@@ -52,10 +54,11 @@ input[type="text"] {
   border-radius: 8px;
   font-size: 16px;
   transition: border 0.2s;
+  background-color: #fffafa;
 }
 
 input[type="text"]:focus {
-  border-color: #4c9aff;
+  border-color: #90ee90;
   outline: none;
 }
 
@@ -63,7 +66,7 @@ input[type="text"]:focus {
 button {
   margin-top: 20px;
   padding: 12px;
-  background-color: #4c9aff;
+  background-color: #ffb6c1;
   color: white;
   border: none;
   border-radius: 8px;
@@ -73,22 +76,22 @@ button {
 }
 
 button:hover {
-  background-color: #357ae8;
+  background-color: #f77eaa;
 }
 
 /* 결과 박스 */
 .result-box {
   margin-top: 30px;
   padding: 20px;
-  background-color: #f0f4ff;
-  border: 1px solid #c3d2f2;
+  background-color: #fff0f5;
+  border: 1px solid #ffc0cb;
   border-radius: 12px;
 }
 
 .result-box h2 {
   font-size: 18px;
   margin-bottom: 10px;
-  color: #2a3f5f;
+  color: #d14d72;
 }
 
 .result-box p {
@@ -96,7 +99,7 @@ button:hover {
   font-size: 16px;
 }
 
-/* 모바일 대응 */
+/* 모바일 */
 @media (max-width: 480px) {
   .container {
     padding: 24px;
